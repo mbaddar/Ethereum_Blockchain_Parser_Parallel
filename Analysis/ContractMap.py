@@ -96,7 +96,7 @@ class ContractMap(object):
             elif not self.addresses[txn["to"]]:
                         self.addresses[txn["to"]] = 1
                         if not self.addresses[txn["from"]]:
-                       self.addresses[txn["from"]] = 2
+                            self.addresses[txn["from"]] = 2
 
             if not self.addresses[block["miner"]]:
                 self.addresses[block["miner"]] = 4

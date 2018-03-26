@@ -1,17 +1,14 @@
 """Pull data from geth and parse it into mongo.
+The code must run on Linux. However geth and mongo can 
+run on windows.
+
 WINDOWS configurations:
 Mongo and geth processes must be on
 Run the following commands before running this script:
-geth --rpc
+geth --rpc --rpcport "8545" --rpcaddr "0.0.0.0"
 mongod 
-from https://www.lfd.uci.edu/~gohlke/pythonlibs/#cytoolz
-download: 
-cytoolz-0.9.0.1-cp36-cp36m-win_amd64.whl
-then: 
-pip install path\cytoolz-0.9.0.1-cp36-cp36m-win_amd64.whl
 
-pip install eth-utils
-pip install eth-hash[pycryptodome]
+
 """
 
 import subprocess
