@@ -78,14 +78,15 @@ def highestBlock(client):
     """
     # We don't need the entire db
     #n = client.find_one(sort=[("number", pymongo.DESCENDING)])
-    n = client.find_one({ },
+    print("Finding highest block mongo")
+    highest_block = client.find_one({ },
     { "_id":0 ,"number": 1}, sort=[("number", pymongo.DESCENDING)])
     #pdb.set_trace()
-    if not n:
+    if not highest_block:
         # If the database is empty, the highest block # is 0
         return -1
-    assert "number" in n, "Highest block is incorrectly formatted"
-    return n["number"]
+    assert "number" in highest_block, "Highest block is incorrectly formatted"
+    return highest_block["number"]
 
 
 def makeBlockQueue(client):
