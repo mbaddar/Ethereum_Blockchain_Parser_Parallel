@@ -173,7 +173,7 @@ class Crawler(object):
         with block data.
         """
         print("Processing geth blockchain:")
-        print("Highest block found as: {}".format(self.max_block_geth))
+        #print("Highest block found as: {}".format(self.max_block_geth))
         # Deprecated 
         # print("Number of blocks to process: {}".format(
         #     len(self.block_queue)))
@@ -204,6 +204,10 @@ class Crawler(object):
         #                 logging.info("Added block {}".format(n))
         ####################################################################
         # Get all new blocks
+        if self.max_block_mongo > self.min_block_geth and self.max_block_mongo < self.max_block_geth:
+            #Crawl from the next block
+            print("Resuming crawling from block %8d" % self.max_block_mongo+1)
+            self.min_block_geth = self.max_block_mongo+1
         try:
             self.min_block_geth = self.max_block_mongo 
         except Exception:
