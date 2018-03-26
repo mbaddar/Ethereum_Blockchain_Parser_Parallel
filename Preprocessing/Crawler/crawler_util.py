@@ -79,8 +79,8 @@ def highestBlock(client):
     # We don't need the entire db
     #n = client.find_one(sort=[("number", pymongo.DESCENDING)])
     n = client.find_one({ },
-    { "_id":0 ,"name": 1}, sort=[("number", pymongo.DESCENDING)])
-    pdb.set_trace()
+    { "_id":0 ,"number": 1}, sort=[("number", pymongo.DESCENDING)])
+    #pdb.set_trace()
     if not n:
         # If the database is empty, the highest block # is 0
         return -1

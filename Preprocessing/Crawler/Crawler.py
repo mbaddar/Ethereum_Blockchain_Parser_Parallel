@@ -42,7 +42,6 @@ class Crawler(object):
         mongo_url = mongo_host+":" + str(mongo_port)
         
         self.mongo_client = crawler_util.initMongo(MongoClient(host=[mongo_url]))
-        pdb.set_trace()
         # The max block number that is in mongo
         self.max_block_mongo = None
         # The max block number in the public blockchain
