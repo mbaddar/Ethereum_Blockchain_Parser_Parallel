@@ -86,7 +86,7 @@ def highestBlock(client):
         # If the database is empty, the highest block # is 0
         return -1
     assert "number" in highest_block, "Highest block is incorrectly formatted"
-    return highest_block["number"]
+    return int(highest_block["number"])
 
 
 def makeBlockQueue(client):
