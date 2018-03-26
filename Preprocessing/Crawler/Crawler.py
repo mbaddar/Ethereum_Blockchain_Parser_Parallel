@@ -11,7 +11,7 @@ import time
 import tqdm
 import pdb
 sys.path.append(os.path.realpath(os.path.dirname(__file__)))
-HOST = "http://10.0.2.2"
+#HOST = "http://10.0.2.2"
 #DIR = "C:/data/db"
 LOGFIL = "crawler.log"
 if "BLOCKCHAIN_ANALYSIS_LOGS" in os.environ:
@@ -27,23 +27,27 @@ class Crawler(object):
     def __init__(
         self,
         start=True,
+        geth_host= "http://10.0.2.2",
         rpc_port=8545,
-        host= HOST,
+        mongo_host = "10.0.2.2",
+        mongo_port = 27017,
+        min_block_geth = 2900000,
         delay=0.0001
     ):
         """Initialize the Crawler."""
         print("Starting Crawler")
-        self.url = "{}:{}".format(host, rpc_port)
+        self.url = "{}:{}".format(geth_host, rpc_port)
         self.headers = {"content-type": "application/json"}
-
         # Initializes to default host/port = localhost/27017
-        self.mongo_client = crawler_util.initMongo(MongoClient(host=['10.0.2.2:27017']))
+        mongo_url = mongo_host+":" + str(mongo_port)
+        
+        self.mongo_client = crawler_util.initMongo(MongoClient(host=[mongo_url]))
         # The max block number that is in mongo
         self.max_block_mongo = None
         # The max block number in the public blockchain
         self.max_block_geth = None
         # If you don't want to start from Genesis block
-        self.min_block_geth = 2900000
+        self.min_block_geth = min_block_geth
         # Record errors for inserting block data into mongo
         self.insertion_errors = list()
         # Make a stack of block numbers that are in mongo
@@ -54,10 +58,13 @@ class Crawler(object):
 
         self.session=requests.Session()
 
+        self.max_block_mongo = self.highestBlockMongo()
+        self.max_block_geth =  self.highestBlockEth()
         if start:
-            self.max_block_mongo = self.highestBlockMongo()
-            self.max_block_geth =  self.highestBlockEth()
             self.run()
+        else:
+            print("Highest block mongo=%9d" % self.max_block_mongo )
+            print("Highest block eth=%9d" % self.highestBlockEth())            
 
     def _rpcRequest(self, method, params, key):
         """Make an RPC request to geth on port 8545."""

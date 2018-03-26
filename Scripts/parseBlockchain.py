@@ -25,11 +25,22 @@ from Crawler import Crawler
 #from ContractMap import ContractMap
 import time
 LOGDIR = './../logs'
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-min" ,"--minblockgeth" , type=int, default=2900000)
+parser.add_argument("-max", "--maxblockgeth" , type=int, default=-1)
+parser.add_argument("-gh", "--gethhost", default="10.0.2.2")
+parser.add_argument("-mh", "--mongohost", default="10.0.2.2")
+parser.add_argument("-s", "--start", default= False)
+
+
+args = parser.parse_args()
 
 
 print("Booting processes.")
 # Catch up with the crawler
-c = Crawler.Crawler()
+c = Crawler.Crawler(args.start)
 
 print("completed")
 
