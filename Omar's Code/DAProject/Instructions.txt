@@ -1,0 +1,15 @@
+This part aims to extract transactions related data from the blockchain. 
+Open Studio 3T and connect to your local db that has the blocks.
+
+Inside the Analysis folder there are '.js' saved aggregate functions. 
+Open and run those aggregate pipelines in Studio 3T according to the steps.
+After execution, refresh your collections folder to see the new collections made.
+
+
+Things to do:
+1. Verify extracted data.
+2. Export relevant fields for plotting.
+3. Plot the graphs.
+4. Explain the graphs.
+
+The python code is not to be run in its current state. If I get a chance to fix it I will update. 
