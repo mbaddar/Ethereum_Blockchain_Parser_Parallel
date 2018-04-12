@@ -1,0 +1,100 @@
+{ 
+    "_id" : "0x209c4784ab1e8183cf58ca33cb740efbf3fc18ef", 
+    "totalValue" : 12362766.225237455, 
+    "transactions" : 587990.0
+}
+{ 
+    "_id" : "0x7727e5113d1d161373623e5f49fd568b4f543a9e", 
+    "totalValue" : 12072289.758089611, 
+    "transactions" : 64061.0
+}
+{ 
+    "_id" : "0xfa52274dd61e1643d2205169732f29114bc240b3", 
+    "totalValue" : 9981656.455467101, 
+    "transactions" : 211251.0
+}
+{ 
+    "_id" : "0x02459d2ea9a008342d8685dae79d213f14a87d43", 
+    "totalValue" : 5922312.018808228, 
+    "transactions" : 7190.0
+}
+{ 
+    "_id" : "0xcafb10ee663f465f9d10588ac44ed20ed608c11e", 
+    "totalValue" : 4478108.798956807, 
+    "transactions" : 2370.0
+}
+{ 
+    "_id" : "0xc257274276a4e539741ca11b590b9447b26a8051", 
+    "totalValue" : 4288456.110724086, 
+    "transactions" : 97328.0
+}
+{ 
+    "_id" : "0x6fc82a5fe25a5cdb58bc74600a40a69c065263f8", 
+    "totalValue" : 4213587.620218947, 
+    "transactions" : 29604.0
+}
+{ 
+    "_id" : "0x22b84d5ffea8b801c0422afe752377a64aa738c2", 
+    "totalValue" : 3726651.3968208153, 
+    "transactions" : 1525.0
+}
+{ 
+    "_id" : "0xe94b04a0fed112f3664e45adb2b8915693dd5ff3", 
+    "totalValue" : 3680807.621031744, 
+    "transactions" : 276257.0
+}
+{ 
+    "_id" : "0xd94c9ff168dc6aebf9b6cc86deff54f3fb0afc33", 
+    "totalValue" : 3312995.8073733672, 
+    "transactions" : 269.0
+}
+{ 
+    "_id" : "0x91337a300e0361bddb2e377dd4e88ccb7796663d", 
+    "totalValue" : 3265607.537547425, 
+    "transactions" : 315842.0
+}
+{ 
+    "_id" : "0x9ae63ee2e8ed29f4a4edb982f918a33c2caf3f98", 
+    "totalValue" : 2735935.048395633, 
+    "transactions" : 2834.0
+}
+{ 
+    "_id" : "0x8bbb73bcb5d553b5a556358d27625323fd781d37", 
+    "totalValue" : 2488234.447847524, 
+    "transactions" : 3119.0
+}
+{ 
+    "_id" : "0x70faa28a6b8d6829a4b1e649d26ec9a2a39ba413", 
+    "totalValue" : 2416450.2716441727, 
+    "transactions" : 296550.0
+}
+{ 
+    "_id" : "0x267be1c1d684f78cb4f6a176c4911b741e4ffdc0", 
+    "totalValue" : 2180027.6874, 
+    "transactions" : 26.0
+}
+{ 
+    "_id" : "0xd12cd8a37f074e7eafae618c986ff825666198bd", 
+    "totalValue" : 1427756.4659413877, 
+    "transactions" : 1587.0
+}
+{ 
+    "_id" : "0x3a5c8f1eb265f360a8313a31b62a3443d5c68318", 
+    "totalValue" : 1398595.99, 
+    "transactions" : 20.0
+}
+{ 
+    "_id" : "0x556b5712c2a7cc5506fbfa785b52536fb8243765", 
+    "totalValue" : 1393310.9925536471, 
+    "transactions" : 313.0
+}
+{ 
+    "_id" : "0xaa1a6e3e6ef20068f7f8d8c835d2d22fd5116444", 
+    "totalValue" : 1342651.9096104654, 
+    "transactions" : 14042.0
+}
+{ 
+    "_id" : "0x898882057027bbba5e400f96b4dcc8b08d3c3060", 
+    "totalValue" : 1227979.0865253885, 
+    "transactions" : 1501.0
+}

@@ -13,7 +13,7 @@ db.Transactions.aggregate(
 		// Stage 2
 		{
 			$match: {
-			    "transactions.toContract" : {$eq: true}
+			    $and: [ { "transactions.toContract" : {$eq: true}}, {"transactions.to" : { $ne: "to"}} ]
 			}
 		},
 
