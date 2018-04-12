@@ -206,7 +206,6 @@ class Crawler(object):
         # Get all new blocks
         if self.max_block_mongo > self.min_block_geth and self.max_block_mongo < self.max_block_geth:
             #Crawl from the next block
-            #pdb.set_trace()
             print("Resuming crawling from block %8d" % ( self.max_block_mongo+1  ) )
             self.min_block_geth = self.max_block_mongo+1
         try:
