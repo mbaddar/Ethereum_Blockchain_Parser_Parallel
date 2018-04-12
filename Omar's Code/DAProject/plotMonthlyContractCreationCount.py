@@ -29,7 +29,7 @@ def plot(database):
     plot.spines["right"].set_visible(False) 
     plot.grid(True)
 
-    label=plot.set_ylabel("Monthly Contract Creation Count", fontsize=16)  
+    label=plot.set_title("Monthly Contract Creation Count", fontsize=16)  
 
     plot.xaxis_date()
 

@@ -16,10 +16,10 @@ if __name__=="__main__":
         #utils.transactionVolContractVSRest(collection)
         #utils.transactionsOfContracts()      
         #utils.extractTransactionInformation()
-        #plotMonthlyContractTxnVol.plot(database)
+        plotMonthlyContractTxnVol.plot(database)
         #plotMonthlyNonContractTxnVol.plot(database)
         #plotTransactionVolPieChart.plot(database)
-        plotMonthlyContractCreationCount.plot(database)
+        #plotMonthlyContractCreationCount.plot(database)
 
     finally:
         client.close()
