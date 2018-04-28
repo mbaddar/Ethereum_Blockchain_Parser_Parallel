@@ -1,7 +1,8 @@
 # Acknowledgement!
 This is a fork of the github Repository https://github.com/alex-miller-0/Ethereum_Blockchain_Parser/ from Alex Miller and some of his code and structure in the Analysis and Preprocessing folder to parse the blockchain and build a transaction graph is obtained!
 
-The python scripts in the Scripts folder are all written by me for the master thesis analysis of the Ethereum main network.
+## Documentation
+Please find the documentaion for this mini-project [here](https://github.com/mbaddar/Ethereum_Blockchain_Parser_Parallel/blob/master/doc/cryptocurrencies_smart_contracts_analysis.pdf)
 
 
 # Prerequisites
